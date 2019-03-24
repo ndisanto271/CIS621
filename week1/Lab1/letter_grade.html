@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Show letter grade</title>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+	<script>
+		var entry;
+		var letterGrade;
+		
+		do {
+			entry = prompt("Enter number grade from 0 through 100\n" +
+					"Or enter 999 to end entries", 999);
+			entry = parseInt(entry);
+
+			if((entry < 0 || entry > 100))
+			{
+				//do nothing
+			}
+			else if (entry !=999)
+			{
+				if (entry >= 88 && entry <= 100) {
+					letterGrade = "A"
+				} else if (entry >= 80 && entry <= 87) {
+					letterGrade = "B"
+				} else if (entry >= 68 && entry <= 79){
+					letterGrade = "C"
+				} else if (entry >= 60 && entry <=67){
+					letterGrade = "D"
+				}
+				else{
+					letterGrade = "F"
+				}
+
+				alert("Number grade = " + entry + "\n"
+						+ "Letter grade = " + letterGrade);
+			}
+
+
+		}
+		while (entry != 999);
+	</script>
+</head>
+<body>
+<section>
+    <h1>This page is displayed after the JavaScript is executed</h1>
+</section>
+</body>
+</html>
