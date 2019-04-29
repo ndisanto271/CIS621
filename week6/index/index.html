@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASGN 5 Form Validation</title>
+    <!-- Normal style sheet used for layout and general formatting. -->
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+	<script type="text/javascript">
+
+		
+    </script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<form id="contact" method="post" action="thank_you.html">
+     
+<fieldset>    
+ 
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Full Name" title="Enter your name" class="required"><br/>
+ 
+<label for="email">E-mail Address</label>
+<input type="text" name="email" id = "email" placeholder="name@domain.com" title="Enter your email" class="required"><br/>
+ 
+<label for="phone">Phone Number</label>
+<input type="text" name="phone" id="phone" placeholder="ex. (555) 555-5555"><br/>
+
+<label for="country">Country</label>
+<input type="text" name="country" id="country"><br/>
+
+<input type="submit" name="submit" id="submit" value="Send Message"/>
+<input type="reset" id="reset" name="reset" value="Reset"><br>
+ 
+</fieldset>
+</form>
+ 
+</body>
+</html>
